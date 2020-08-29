@@ -37,10 +37,10 @@ class Sidebar extends Component {
             <img src={email} alt="Email" style={{width: '25px', height: '25px'}}/> &nbsp; &nbsp; <p className="font-italic pt-1">evelyn@bankell.se</p>
           </div>
           <div className="row m-2 mt-1 pl-4">
-            <img src={link} alt="Linkedin" style={{width: '25px'}}/> &nbsp; &nbsp; <a className="" href="https://www.linkedin.com/in/evelyn-bankell-96a53618a/">Evelyn Bankell</a>
+            <img src={link} alt="Linkedin" style={{width: '25px', height: '25px'}}/> &nbsp; &nbsp; <a className="" href="https://www.linkedin.com/in/evelyn-bankell-96a53618a/">Evelyn Bankell</a>
           </div>
           <div className="row m-2 mt-4 pl-3">
-            <img src={github} alt="Github" style={{width: '40px'}}/> &nbsp; <a className="pt-2" href="https://github.com/evelynbankell/">evelynbankell</a>
+            <img src={github} alt="Github" style={{width: '40px', height: '40px'}}/> &nbsp; <a className="pt-2" href="https://github.com/evelynbankell/">evelynbankell</a>
           </div>
         </div>
       </React.Fragment>
