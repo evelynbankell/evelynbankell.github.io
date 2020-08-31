@@ -106,7 +106,7 @@ function SofModal(props) {
         <img src={sof} alt="Sof" style={{width: '100%'}}/>
         <br/>
         <br/>
-        <a className="pt-2 font-weight-bold" href={"/"}>Visit website here</a>
+        <a className="pt-2 font-weight-bold" href={"http://sofiassomnad.se/"}>Visit website here</a>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
