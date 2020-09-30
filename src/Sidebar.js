@@ -5,10 +5,6 @@ import link from './linkedin-logo.png'
 import github from './github.png'
 
 class Sidebar extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <React.Fragment>
@@ -22,7 +18,6 @@ class Sidebar extends Component {
           <div className="row m-3 mt-2 pl-3">
             <NavLink className="link-text" exact activeClassName="active" to="/about">ABOUT</NavLink>
           </div>
-
 
           <br>
           </br>

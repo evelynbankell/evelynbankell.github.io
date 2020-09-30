@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ai from './ai.png'
 import bi from './bi.png'
 import bi2 from './bi2.png'
 import bild from './bild.jpg'
@@ -9,13 +10,10 @@ import web from './web.png'
 import sof from './sof.png'
 import ko from './ko.png'
 import moa from './moa2.png'
+import gif from './test.gif'
 import Pdf from './virtual-human.pdf';
-import {Form, FormGroup, Label, Input, Button } from 'react-bootstrap';
+import {Button } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal'
-import ModalDialog from 'react-bootstrap/ModalDialog'
-import ModalHeader from 'react-bootstrap/ModalHeader';
-import ModalFooter from 'react-bootstrap/ModalFooter'
-import useState from 'react-hook-use-state';
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -76,7 +74,7 @@ function VirtualModal(props) {
         The goal was to increase our knowledge about human perception and cognition.
         </p>
         <img src={faces} alt="Faces" style={{width: '100%'}}/>
-        <a className="pt-2 font-weight-bold" href={Pdf} target = "_blank">Download Pdf</a>
+        <a className="pt-2 font-weight-bold" href={Pdf} target="_blank">Download Pdf</a>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -164,7 +162,7 @@ function KandidatModal(props) {
       <Modal.Body>
         <h4>Compressor and bike data visualization</h4>
         <p>
-        In this project an inetractive visualization dashboard was implemneted using dc.js as frontend and Node.js as backend.
+        In this project an interactive visualization dashboard was implemneted using dc.js as frontend and Node.js as backend.
         The dashboard consists of two different dashboards.
         The first one visualizes compressor real time data that simulates the malfunction and warning of each compressor in the data set.
         The second one consists of real time data from bikes in San Fransisco.
@@ -200,11 +198,82 @@ function BiModal(props) {
         In this project, an animated short film was made.
         Both Maya and 3DS Max were used to rigg, animate and model the bee and the scene
         </p>
-        <img src={bi} alt="Bi" style={{width: '100%'}}/>
-        <img className="" src={bi2} alt="Bi2" style={{width: '40%'}}/>
+        <p className="ml-5">Extract from the video:</p>
+        <img className="ml-5" src={require('./test.gif')} alt="loading..." style={{width: '80%'}}/>
+        <br/>
+        <br/>
+        <img className="ml-5" src={bi} alt="Bi" style={{width: '80%'}}/>
+        <img className="ml-4" src={bi2} alt="Bi2" style={{width: '40%'}}/>
         <img className="ml-5" src={bild} alt="Bild" style={{width: '40%'}}/>
         <br/>
         <br/>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+function AiModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          AI FOR INTERACTIVE MEDIA - TNM095
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Catch The Quince</h4>
+        <p>
+        UNDER PROGRESS
+        </p>
+        <p>
+        In this project, a simple game was implemented (the user have to catch the falling fruits) in Python with the framework Pygame.
+        An AI-agent has been trained with use of a Reinforcement Learning called Q-Learning.
+        </p>
+        <img src={ai} alt="Ai" style={{width: '70%'}}/>
+        <br/>
+        <br/>
+        <a className="pt-2 font-weight-bold" href={"https://github.com/hannahbergenroth/CatchTheQuince"}>Git repository</a>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+function GlobalModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          ADVANCED GLOBAL ILLUMINATION AND RENDERING - TNCG15
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Monte Carlo Ray Tracer</h4>
+        <p>
+        UNDER PROGRESS
+        </p>
+        <p>
+        In this project, a Monte Carlo Ray Tracer will be implemented in C++.
+        </p>
+
+        <br/>
+        <br/>
+        <a className="pt-2 font-weight-bold" href={"https://github.com/evelynbankell/MonteCarloRayTracer"}>Git repository</a>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -219,7 +288,7 @@ function Webmodal() {
 
   return (
     <>
-      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-2 p-1 m-5">
+      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 p-1 m-5">
         <span className="box-text" onClick={() => setModalShow(true)}>
           <img src={web} alt="Web" style={{width: '100%'}}/>
           <p className="font-weight-bold pt-5">ADVANCED WEB PROGRAMING</p>
@@ -238,7 +307,7 @@ function Virtualhuman() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
-      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-2 p-1 m-5">
+      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 p-1 m-5">
         <span className="box-text" onClick={() => setModalShow(true)}>
         <img src={faces} alt="Faces" style={{width: '100%'}}/>
         <p className="font-weight-bold pt-5">VIRTUAL HUMAN</p>
@@ -257,7 +326,7 @@ function SofSomnad() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
-      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-2 p-1 m-5">
+      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 p-1 m-5">
         <span className="box-text" onClick={() => setModalShow(true)}>
         <img src={sof} alt="Sof" style={{width: '100%'}}/>
         <p className="font-weight-bold pt-3">SOFIAS SÖMNAD</p>
@@ -276,7 +345,7 @@ function Moa() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
-      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-2 p-2 m-5">
+      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 p-2 m-5">
         <span className="box-text" onClick={() => setModalShow(true)}>
         <img src={ko} alt="Ko" style={{width: '80%'}}/>
         <p className="font-weight-bold pt-3">MODELING AND ANIMATION</p>
@@ -295,7 +364,7 @@ function Kandidat() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
-      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-2 p-2 m-5">
+      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 p-2 m-5">
         <span className="box-text" onClick={() => setModalShow(true)}>
         <img src={comp} alt="Comp" style={{width: '80%'}}/>
         <p className="font-weight-bold pt-3">BACHELOR PROJECT</p>
@@ -314,7 +383,7 @@ function Bi() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
-      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-2 p-2 m-5">
+      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 p-2 m-5">
         <span className="box-text" onClick={() => setModalShow(true)}>
         <img src={bi} alt="Bi" style={{width: '100%'}}/>
         <p className="font-weight-bold pt-3">3D COMPUTER GRAPHICS</p>
@@ -322,6 +391,45 @@ function Bi() {
       </div>
 
       <BiModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </>
+  );
+}
+
+function Ai() {
+  const [modalShow, setModalShow] = React.useState(false);
+  return (
+    <>
+      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 p-2 m-5">
+        <span className="box-text" onClick={() => setModalShow(true)}>
+        <img src={ai} alt="Ai" style={{width: '60%'}}/>
+        <p className="font-weight-bold pt-3">AI FOR INTERACTIVE MEDIA</p>
+        </span>
+      </div>
+
+      <AiModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </>
+  );
+}
+
+function Global() {
+  const [modalShow, setModalShow] = React.useState(false);
+  return (
+    <>
+      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 p-2 m-5">
+        <span className="box-text" onClick={() => setModalShow(true)}>
+
+        <p className="font-weight-bold pt-3">UNDER PROGRESS</p>
+        <p className="font-weight-bold pt-3">ADV. GLOBAL ILLUMINTATION AND RENDERING</p>
+        </span>
+      </div>
+
+      <GlobalModal
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
@@ -341,16 +449,15 @@ class Home extends Component {
         <div className="container-fluid m-0 p-0">
           <p className="h1 pt-4 mt-2 font-weight-light red-text">MY PROJECTS</p>
           <div className="row justify-content-center">
+            <Ai/>
+            <Global/>
             <Webmodal/>
             <Virtualhuman/>
             <SofSomnad/>
             <Moa/>
             <Kandidat/>
             <Bi/>
-            <div className="col-12 col-sm-10 col-md-5 col-lg-4 col-xl-2 p-2 m-5">
-            </div>
-            <div className="col-12 col-sm-10 col-md-5 col-lg-4 col-xl-2 p-2 m-5">
-            </div>
+
           </div>
 
         </div>
