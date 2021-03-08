@@ -10,8 +10,12 @@ import web from './web.png'
 import sof from './sof.png'
 import ko from './ko.png'
 import moa from './moa2.png'
+import monte from './all_64.png'
+import bildteknik from './bildteknik.png'
 import gif from './test.gif'
 import Pdf from './virtual-human.pdf';
+import Pdf_TNM095 from './TNM095_CatchTheQuince.pdf';
+import Pdf_bild from './Bildteknik.pdf';
 import {Button } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal'
 
@@ -231,16 +235,14 @@ function AiModal(props) {
       <Modal.Body>
         <h4>Catch The Quince</h4>
         <p>
-        UNDER PROGRESS
+        In this project, a simple ball catcher game was implemented in Python with the framework Pygame.
+        An AI-agent has been trained with use of Reinforcement Learning and Q-Learning.
         </p>
-        <p>
-        In this project, a simple game was implemented (the user have to catch the falling fruits) in Python with the framework Pygame.
-        An AI-agent has been trained with use of a Reinforcement Learning called Q-Learning.
-        </p>
-        <img src={ai} alt="Ai" style={{width: '70%'}}/>
-        <br/>
-        <br/>
         <a className="pt-2 font-weight-bold" href={"https://github.com/hannahbergenroth/CatchTheQuince"}>Git repository</a>
+        <a className="pt-2 ml-4 font-weight-bold" href={Pdf_TNM095} target="_blank">Project Report</a>
+        <br/>
+        <br/>
+        <img src={ai} alt="Ai" style={{width: '60%'}}/>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -265,15 +267,46 @@ function GlobalModal(props) {
       <Modal.Body>
         <h4>Monte Carlo Ray Tracer</h4>
         <p>
-        UNDER PROGRESS
+        In this project, a Monte Carlo Ray Tracer with path tracing was implemented in C++ from scratch.
         </p>
-        <p>
-        In this project, a Monte Carlo Ray Tracer will be implemented in C++.
-        </p>
-
-        <br/>
-        <br/>
         <a className="pt-2 font-weight-bold" href={"https://github.com/evelynbankell/MonteCarloRayTracer"}>Git repository</a>
+        <br/>
+        <br/>
+        <img src={monte} alt="Blobal" className="rounded mx-auto d-block" style={{width: '60%'}}/>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+function BildModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          IMAGING TECHNOLOGY - TNM089
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>All-In-Focus-Image</h4>
+        <p>
+        This project introduced a method for creating a completely focused image from an image stack (images with different depth of fields).
+        The algorithm uses Sum-Modified-Laplacian as focus measure, where a weight map was obtained for each pixel.
+        For each image in the stack, a Laplacian Pyramid and a Gaussian pyramid were created for the corresponding weight map for each image.
+        Finally, the images were combined by image fusion and the result was obtained by a inverse Laplacian pyramid transform.
+        </p>
+        <a className="pt-2 font-weight-bold" href={"https://github.com/hannahbergenroth/All-in-focus-image"}>Git repository</a>
+        <a className="pt-2 ml-4 font-weight-bold" href={Pdf_bild} target="_blank">Project Report</a>
+        <br/>
+        <br/>
+        <img src={bildteknik} alt="Bildt" style={{width: '100%'}}/>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -423,13 +456,31 @@ function Global() {
     <>
       <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 p-2 m-5">
         <span className="box-text" onClick={() => setModalShow(true)}>
-
-        <p className="font-weight-bold pt-3">UNDER PROGRESS</p>
+        <img src={monte} alt="Global" style={{width: '70%'}}/>
         <p className="font-weight-bold pt-3">ADV. GLOBAL ILLUMINTATION AND RENDERING</p>
         </span>
       </div>
 
       <GlobalModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </>
+  );
+}
+
+function Bildteknik() {
+  const [modalShow, setModalShow] = React.useState(false);
+  return (
+    <>
+      <div className="box col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3 p-2 m-5">
+        <span className="box-text" onClick={() => setModalShow(true)}>
+        <img src={bildteknik} alt="Bildt" style={{width: '100%'}}/>
+        <p className="font-weight-bold pt-5">IMAGING TECHNOLOGY</p>
+        </span>
+      </div>
+
+      <BildModal
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
@@ -450,6 +501,7 @@ class Home extends Component {
           <p className="h1 pt-4 mt-2 font-weight-light red-text">MY PROJECTS</p>
           <div className="row justify-content-center">
             <Ai/>
+            <Bildteknik/>
             <Global/>
             <Webmodal/>
             <Virtualhuman/>
