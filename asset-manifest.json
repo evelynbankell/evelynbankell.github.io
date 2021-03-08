@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca4b324b.chunk.css",
-    "main.js": "/static/js/main.afed4d04.chunk.js",
-    "main.js.map": "/static/js/main.afed4d04.chunk.js.map",
+    "main.css": "/static/css/main.e1d75fe0.chunk.css",
+    "main.js": "/static/js/main.965f5b69.chunk.js",
+    "main.js.map": "/static/js/main.965f5b69.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f9349c23.js",
     "runtime-main.js.map": "/static/js/runtime-main.f9349c23.js.map",
     "static/css/2.f3cffc9e.chunk.css": "/static/css/2.f3cffc9e.chunk.css",
-    "static/js/2.49d25c1e.chunk.js": "/static/js/2.49d25c1e.chunk.js",
-    "static/js/2.49d25c1e.chunk.js.map": "/static/js/2.49d25c1e.chunk.js.map",
+    "static/js/2.66586f87.chunk.js": "/static/js/2.66586f87.chunk.js",
+    "static/js/2.66586f87.chunk.js.map": "/static/js/2.66586f87.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f79f39eb98c5258bcca60dbe920ce3b6.js": "/precache-manifest.f79f39eb98c5258bcca60dbe920ce3b6.js",
+    "precache-manifest.447aa012a8cc2a40a7b4d8190e47a307.js": "/precache-manifest.447aa012a8cc2a40a7b4d8190e47a307.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.f3cffc9e.chunk.css.map": "/static/css/2.f3cffc9e.chunk.css.map",
-    "static/css/main.ca4b324b.chunk.css.map": "/static/css/main.ca4b324b.chunk.css.map",
-    "static/js/2.49d25c1e.chunk.js.LICENSE.txt": "/static/js/2.49d25c1e.chunk.js.LICENSE.txt",
+    "static/css/main.e1d75fe0.chunk.css.map": "/static/css/main.e1d75fe0.chunk.css.map",
+    "static/js/2.66586f87.chunk.js.LICENSE.txt": "/static/js/2.66586f87.chunk.js.LICENSE.txt",
+    "static/media/Bildteknik.pdf": "/static/media/Bildteknik.812cb470.pdf",
+    "static/media/CV_evelynbankell.pdf": "/static/media/CV_evelynbankell.d0d02cb7.pdf",
+    "static/media/TNM095_CatchTheQuince.pdf": "/static/media/TNM095_CatchTheQuince.062587dc.pdf",
     "static/media/ai.png": "/static/media/ai.ff0fabb0.png",
+    "static/media/all_64.png": "/static/media/all_64.0bb9cf86.png",
     "static/media/bi.png": "/static/media/bi.8a34bbb5.png",
     "static/media/bi2.png": "/static/media/bi2.15e9ebc7.png",
     "static/media/bild.jpg": "/static/media/bild.fc000bca.jpg",
+    "static/media/bildteknik.png": "/static/media/bildteknik.0f9dfd14.png",
     "static/media/compressorMain.png": "/static/media/compressorMain.910f7da0.png",
     "static/media/email2.png": "/static/media/email2.c4bd9291.png",
     "static/media/faces.png": "/static/media/faces.33d60c62.png",
@@ -34,8 +39,8 @@
   "entrypoints": [
     "static/js/runtime-main.f9349c23.js",
     "static/css/2.f3cffc9e.chunk.css",
-    "static/js/2.49d25c1e.chunk.js",
-    "static/css/main.ca4b324b.chunk.css",
-    "static/js/main.afed4d04.chunk.js"
+    "static/js/2.66586f87.chunk.js",
+    "static/css/main.e1d75fe0.chunk.css",
+    "static/js/main.965f5b69.chunk.js"
   ]
 }

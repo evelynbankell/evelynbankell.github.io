@@ -1,35 +1,51 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "922ce5db9c7c234ec9fadfd5c29b8464",
+    "revision": "bb3ee64d42154f31e0810dc0c13c48f7",
     "url": "/index.html"
   },
   {
-    "revision": "b7c70fd61a48e3d20147",
+    "revision": "8bc9443dc374cbcb1291",
     "url": "/static/css/2.f3cffc9e.chunk.css"
   },
   {
-    "revision": "8386910a7839be676830",
-    "url": "/static/css/main.ca4b324b.chunk.css"
+    "revision": "2edc90b57db30145a0e4",
+    "url": "/static/css/main.e1d75fe0.chunk.css"
   },
   {
-    "revision": "b7c70fd61a48e3d20147",
-    "url": "/static/js/2.49d25c1e.chunk.js"
+    "revision": "8bc9443dc374cbcb1291",
+    "url": "/static/js/2.66586f87.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/static/js/2.49d25c1e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.66586f87.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8386910a7839be676830",
-    "url": "/static/js/main.afed4d04.chunk.js"
+    "revision": "2edc90b57db30145a0e4",
+    "url": "/static/js/main.965f5b69.chunk.js"
   },
   {
     "revision": "0c7895384607eb66ed8b",
     "url": "/static/js/runtime-main.f9349c23.js"
   },
   {
+    "revision": "812cb4701dbec598741f6b012844355d",
+    "url": "/static/media/Bildteknik.812cb470.pdf"
+  },
+  {
+    "revision": "d0d02cb711ce75b75e56c29a0b848ba0",
+    "url": "/static/media/CV_evelynbankell.d0d02cb7.pdf"
+  },
+  {
+    "revision": "062587dc76d4c04165df95a7c14d76e9",
+    "url": "/static/media/TNM095_CatchTheQuince.062587dc.pdf"
+  },
+  {
     "revision": "ff0fabb04db1413c71d0b9c9973b7cf6",
     "url": "/static/media/ai.ff0fabb0.png"
+  },
+  {
+    "revision": "0bb9cf868cf022b9d575109578ff6a19",
+    "url": "/static/media/all_64.0bb9cf86.png"
   },
   {
     "revision": "8a34bbb535ff3d4703f63c142ef30d17",
@@ -42,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fc000bca952eb0dad43945a67ce07d9a",
     "url": "/static/media/bild.fc000bca.jpg"
+  },
+  {
+    "revision": "0f9dfd14926d2deaadda251ad01924a9",
+    "url": "/static/media/bildteknik.0f9dfd14.png"
   },
   {
     "revision": "910f7da0d643993707329f451eba3fd3",
